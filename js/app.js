@@ -1,5 +1,5 @@
 var year = 2016
-var numMonth = 3;
+var numMonth = 1;
 
 var myDataRef = new Firebase("https://dailyhead.firebaseio.com/");
 //var dt = new Date();
