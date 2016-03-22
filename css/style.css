@@ -1,0 +1,64 @@
+.graph-label {
+  font-size: 30px !important;
+}
+
+rect.now {
+  fill: #00ff80 !important;
+  stroke: #0080ff !important;
+}
+
+text.now {
+  fill: #0080ff !important;
+  font-weight: bold;
+}
+
+
+.q1 {
+  fill: #ff4d4d !important;
+  stroke: black !important;
+}
+
+.q1 + text {
+ fill: black !important;
+ font-weight: bold;
+}
+
+.q2 {
+  fill: #ff3333 !important;
+  stroke: black !important;
+}
+
+.q2 + text {
+ fill: black !important;
+ font-weight: bold;
+}
+
+.q3 {
+  fill: #ff1a1a !important;
+  stroke: black !important;
+}
+
+.q3 + text {
+ fill: black !important;
+ font-weight: bold;
+}
+
+.q4 {
+  fill: #ff0000 !important;
+  stroke: black !important;
+}
+
+.q4 + text {
+ fill: black !important;
+ font-weight: bold;
+}
+
+.q5 {
+  fill: #e60000 !important;
+  stroke: black !important;
+}
+
+.q5 + text {
+ fill: black !important;
+ font-weight: bold;
+}
