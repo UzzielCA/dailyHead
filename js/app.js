@@ -1,3 +1,4 @@
+moment.locale("es");
 var year = 2016
 var numMonth = 3;
 
@@ -16,7 +17,7 @@ cal.init({
   range: numMonth,
   displayLegend: false,
   cellPadding: 5,
-  cellRadius: 51,
+  cellRadius: 10,
   domainGutter: 12,
   domainMargin: 12,
   nextSelector: "#domainDynamicDimension-next",
@@ -29,13 +30,22 @@ cal.init({
   start: new Date(),
   highlight: ['now', data],
   animationDuration: 1500,
-  scale: [2,4,6,8,10],
+  scale: [1,2,3,4,5],
   data: data,
   onClick: function(date, count) {
     registerEvent(date, count);
   },
   legend: [2,4,6,8],
-  domainLabelFormat: "%B %Y",
+  legendColors: ["#510d63", "#f6fcfd"],
+  domainLabelFormat: function (date) {
+    return moment(date).format("MMMM YYYY").toUpperCase();
+  },
+  subDomainTitleFormat: {
+    filled: "{count} episodios el {date}"
+  },
+  subDomainDateFormat: function (date) {
+    return moment(date).format("LL");
+  }
   });
 
   $("#jumpToday").on('click', function (event) {
